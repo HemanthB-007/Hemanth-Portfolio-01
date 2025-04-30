@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Hemanth Boddupally</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Calibri', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      overflow-x: hidden;
+      height: 100%;
+    }
+
+    canvas#matrix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #000000;
+    }
+
+    .skills-container {
+      position: relative;
+      z-index: 10;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.85);
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      max-height: 80vh; /* Ensure content fits without extending past bottom */
+      overflow-y: auto; /* Allows scrolling inside the box */
+    }
+
+    .skills-container h1 {
+      text-align: center;
+      color: #00ffcc;
+      margin-bottom: 40px;
+    }
+
+    .skill-section {
+      margin-bottom: 30px;
+      padding: 15px 25px;
+      border-left: 4px solid #00ffcc;
+      background-color: rgba(10, 10, 10, 0.7);
+      border-radius: 6px;
+    }
+
+    .skill-section h3 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .skill-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .skill-section li {
+      padding: 5px 0;
+      color: #ffffff;
+    }
+
+    @keyframes fadeInZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <canvas id="matrix"></canvas>
+
+  <div class="skills-container">
+    <h1>My Skills</h1>
+
+    <div class="skill-section">
+      <h3>💻 Technical Skills</h3>
+      <ul>
+        <li>Network Security</li>
+        <li>Vulnerability Assessment</li>
+      </ul>
+    </div>
+
+    <div class="skill-section">
+      <h3>🛠️ Tools</h3>
+      <ul>
+        <li>Nmap</li>
+        <li>Wireshark</li>
+        <li>Burp Suite</li>
+        <li>Metasploit</li>
+      </ul>
+    </div>
+
+    <div class="skill-section">
+      <h3>🔤 Programming Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+    </div>
+
+    <div class="skill-section">
+      <h3>🖥️ Operating Systems</h3>
+      <ul>
+        <li>Windows</li>
+        <li>Linux</li>
+        <li>Ubuntu</li>
+      </ul>
+    </div>
+
+    <div class="skill-section">
+      <h3>🧠 Cybersecurity Platforms</h3>
+      <ul>
+        <li>TryHackMe</li>
+        <li>Hack The Box</li>
+        <li>RHCSA</li>
+      </ul>
+    </div>
+
+    <div class="skill-section">
+      <h3>🤝 Soft Skills</h3>
+      <ul>
+        <li>Communication Skills</li>
+        <li>Creative Thinking</li>
+        <li>Problem-Solving Skills</li>
+        <li>Adaptability</li>
+        <li>Team Management</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="matrix.js"></script>
+</body>
+</html>
