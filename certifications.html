@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications | Hemanth Boddupally</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Calibri', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      height: 100%;
+    }
+
+    canvas#matrix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .certifications-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 800px;
+      margin: 50px auto; /* Centering horizontally with some margin */
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffcc;
+      overflow-y: auto; /* Make content scrollable */
+      max-height: 80vh; /* To make sure there's enough space to scroll */
+    }
+
+    .certifications-content h1 {
+      color: #00ffcc;
+      margin-bottom: 30px;
+    }
+
+    .certification {
+      margin: 30px 0;
+      padding: 20px;
+      border-bottom: 1px solid #00ffcc;
+    }
+
+    .certification h3 {
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .certification p {
+      margin: 5px 0 15px;
+      font-style: italic;
+      color: #cccccc;
+    }
+
+    .certification a.button {
+      background: #00ffcc;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .certification a.button:hover {
+      background: #00ccaa;
+    }
+
+    /* Scrollbar styles */
+    .certifications-content::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .certifications-content::-webkit-scrollbar-thumb {
+      background: #000000;
+      border-radius: 10px;
+    }
+
+    .certifications-content::-webkit-scrollbar-track {
+      background: #333333;
+      border-radius: 10px;
+    }
+
+    @keyframes slideFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <canvas id="matrix"></canvas>
+
+  <div class="certifications-content">
+    <h1>My Certifications</h1>
+
+    <div class="certification">
+      <h3>CompTIA Security+</h3>
+      <p>Provider: CompTIA</p>
+      <a href="#" class="button">View Certificate</a>
+    </div>
+
+    <div class="certification">
+      <h3>CompTIA PenTest+</h3>
+      <p>Provider: CompTIA</p>
+      <a href="#" class="button">View Certificate</a>
+    </div>
+
+    <div class="certification">
+      <h3>RHCSA (RH124 & RH134)</h3>
+      <p>Provider: Red Hat</p>
+      <a href="#" class="button">View Certificate</a>
+    </div>
+
+    <div class="certification">
+      <h3>Google Cybersecurity Certificate</h3>
+      <p>Provider: Google / Coursera</p>
+      <a href="#" class="button">View Certificate</a>
+    </div>
+
+    <div class="certification">
+      <h3>Bits and Bytes of Computer Networking</h3>
+      <p>Provider: Coursera (Google-backed)</p>
+      <a href="#" class="button">View Certificate</a>
+    </div>
+  </div>
+
+  <script src="matrix.js"></script>
+</body>
+</html>
