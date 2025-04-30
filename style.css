@@ -87,7 +87,7 @@ canvas#matrix {
     font-family: 'Calibri', sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
-    background-color: #ffffff;
+    background-color: #000000;
     border: 1px solid #00ffcc;
     border-radius: 10px;
     overflow-y: auto; /* Allows the content to scroll within the content box */
