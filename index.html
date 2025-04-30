@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
+    <!-- ✅ Top Navigation Bar (white font) -->
+    <nav class="top-nav">
+        <ul>
+            <!-- Home link added before "About Me" -->
+            <li><a href="#hero">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="hero">
         <canvas id="matrix"></canvas>
         <div class="intro">
             <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
@@ -15,7 +28,6 @@
             <h2><span id="typing"></span></h2>
             <p>Aspiring AI Security Engineer | CSE @ LPU | HTB & THM enthusiast</p>
             <div class="buttons">
-                <a href="#projects" class="btn">Projects</a>
                 <a href="CV_12222985_HEMANTH_GENERALIZED_Final.pdf" class="btn" target="_blank">Download Resume</a>
             </div>
         </div>
